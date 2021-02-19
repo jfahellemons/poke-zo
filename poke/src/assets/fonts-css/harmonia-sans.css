@@ -1,0 +1,19 @@
+@font-face {
+  font-family: harmoniaSans;
+  src: url("../fonts/harmoniaSans.otf") format("truetype");
+}
+
+@font-face {
+  font-family: harmoniaSansProCyrBold;
+  src: url("../fonts/harmoniaSansProCyr-Bold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: harmoniaSansProCyrRegular;
+  src: url("../fonts/harmoniaSansProCyr-Regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: harmoniaSansProCyrRegularGdi;
+  src: url("../fonts/harmoniaSansProCyr-Regular_gdi.otf") format("truetype");
+}
