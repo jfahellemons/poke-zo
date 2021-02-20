@@ -15,6 +15,20 @@
   max-height:100%;
 }
 
+.order-button-home-image {
+  margin: auto;
+  position: absolute;
+  top: 200px;
+  right: 0;
+}
+
+.order-button-home-quote {
+  margin: auto;
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+}
+
 .about-us {
   margin-top: 50px;
   margin-left: 50px;
@@ -40,6 +54,10 @@
   margin-right: 100px;
 }
 
+.home-quote {
+  position: relative;
+}
+
 @media (max-width: $mobile-width) {
   .text-columns {
     flex-direction: column;
@@ -52,6 +70,10 @@
 
   .first-column {
     margin: 0;
+  }
+
+  .order-button-home-quote, .order-button-home-image {
+    right: 30px;
   }
 }
 

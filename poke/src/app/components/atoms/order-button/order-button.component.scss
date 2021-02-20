@@ -1,10 +1,6 @@
 @import "../../../../variables";
 
 .order-button-container {
-  margin: auto;
-  position: absolute;
-  top: 200px;
-  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +20,7 @@
   font-weight: 900;
 }
 
-#order-button {
+.order-button {
   font-family: harmoniaSansProCyrRegular, 'serif';
   color: $poke-green;
   font-size: 16px;
@@ -43,15 +39,11 @@
 }
 
 @media (max-width: $tablet-width) {
-  .order-button-container {
-    right: 50px;
-  }
-
-  #order-button {
-    font-size: 14px;
+  .order-button {
+    font-size: 9px;
   }
 
   .order-text {
-    font-size: 16px;
+    font-size: 12px;
   }
 }

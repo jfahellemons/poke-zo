@@ -2,7 +2,9 @@
 <div class="home-container">
   <div class="home-image-container">
     <img class="home-image" src="../../../assets/images/levi-front.jpg"/>
-    <app-order-button></app-order-button>
+    <div class="order-button-home-image">
+      <app-order-button textId="homeImage"></app-order-button>
+    </div>
   </div>
   <div class="about-us">
     <h3 class="home-text-title">ons verhaal</h3>
@@ -21,5 +23,10 @@
       </div>
     </div>
   </div>
-  <app-quote></app-quote>
+  <div class="home-quote">
+    <div class="order-button-home-quote">
+      <app-order-button textId="homeQuote"></app-order-button>
+    </div>
+    <app-quote></app-quote>
+  </div>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {AfterViewInit, Component, Input, OnInit} from '@angular/core';
 import CircleType from 'circletype';
 
 @Component({
@@ -6,11 +6,14 @@ import CircleType from 'circletype';
   templateUrl: './order-button.component.html',
   styleUrls: ['./order-button.component.scss']
 })
-export class OrderButtonComponent implements OnInit {
+export class OrderButtonComponent implements AfterViewInit {
+  @Input() textId: string;
 
-  constructor() { }
+  constructor() {
 
-  ngOnInit() {
-    const circleType = new CircleType(document.getElementById('order-button'));
+  }
+
+  ngAfterViewInit(): void {
+    const circleType = new CircleType(document.getElementById(this.textId));
   }
 }
