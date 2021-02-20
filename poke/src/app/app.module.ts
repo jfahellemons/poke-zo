@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { MenuItemComponent } from './components/atoms/menu-item/menu-item.component';
 import { LogoComponent } from './components/atoms/logo/logo.component';
@@ -13,6 +12,8 @@ import { MobileMenuComponent } from './components/molecules/mobile-menu/mobile-m
 import { PdfMenuComponent } from './components/molecules/pdf-menu/pdf-menu.component';
 import { MapsComponent } from './components/molecules/maps/maps.component';
 import { HeaderComponent } from './components/organisms/header/header.component';
+import { HomeComponent } from './pages/home/home.component';
+import { QuoteComponent } from './components/organisms/quote/quote.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,9 @@ import { HeaderComponent } from './components/organisms/header/header.component'
     MobileMenuComponent,
     PdfMenuComponent,
     MapsComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent,
+    QuoteComponent,
   ],
   imports: [
     BrowserModule

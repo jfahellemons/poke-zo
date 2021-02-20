@@ -1,0 +1,14 @@
+<div class="header" [ngClass]="{'full-height' : isToggled}">
+  <div class="logo-header">
+    <app-logo logoVariant="white"></app-logo>
+  </div>
+  <div class="icon-container">
+    <img class="toggle-icon" src="{{iconSrc}}" (click)="toggleIcon()"/>
+  </div>
+  <div class="menu-items-container">
+    <app-menu [menuItems]="menuItems"></app-menu>
+  </div>
+  <div class="mobile-items-container" *ngIf="isToggled">
+    <app-mobile-menu [menuItems]="menuItems"></app-mobile-menu>
+  </div>
+</div>

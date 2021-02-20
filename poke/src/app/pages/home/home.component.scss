@@ -1,0 +1,57 @@
+@import "../../../variables";
+
+.home-container {
+  p, h3 {
+    font-family: harmoniaSansProCyrBold, serif;
+  }
+}
+
+.home-image-container {
+  position: relative;
+}
+
+.home-image {
+  max-width:100%;
+  max-height:100%;
+}
+
+.about-us {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+.home-text-title {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.home-text {
+  line-height: 26px;
+}
+
+.text-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-column {
+  margin-right: 100px;
+}
+
+@media (max-width: $mobile-width) {
+  .text-columns {
+    flex-direction: column;
+  }
+
+  .about-us {
+    margin: 0;
+    margin-top: 25px;
+  }
+
+  .first-column {
+    margin: 0;
+  }
+}
+

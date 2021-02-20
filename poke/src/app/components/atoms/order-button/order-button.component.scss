@@ -1,0 +1,57 @@
+@import "../../../../variables";
+
+.order-button-container {
+  margin: auto;
+  position: absolute;
+  top: 200px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.order-text {
+  color: $poke-green;
+  font-family: harmoniaSansProCyrRegular, 'serif';
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+#order-button {
+  font-family: harmoniaSansProCyrRegular, 'serif';
+  color: $poke-green;
+  font-size: 16px;
+  line-height: 0;
+  text-transform: uppercase;
+  animation: text-animation 15s infinite linear;
+}
+
+@keyframes text-animation {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .order-button-container {
+    right: 50px;
+  }
+
+  #order-button {
+    font-size: 14px;
+  }
+
+  .order-text {
+    font-size: 16px;
+  }
+}

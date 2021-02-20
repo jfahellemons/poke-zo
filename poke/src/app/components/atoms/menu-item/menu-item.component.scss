@@ -1,0 +1,26 @@
+@import "../../../../variables";
+
+.menu-item {
+  list-style-type: none;
+  a {
+    font-family: harmoniaSansProCyrBold, serif;
+    color: $poke-dark;
+    font-size: 14px;
+    padding: 5px 7px;
+    border: 1px solid transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s;
+      &:hover {
+        border: 1px solid $poke-dark;
+      }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .menu-item {
+    margin-bottom: 20px;
+  }
+}

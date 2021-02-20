@@ -1,0 +1,18 @@
+@import "../../../../variables";
+
+.quote-container {
+  background-color: $poke-dark;
+  color: $poke-white;
+  text-align: center;
+  padding: 100px 150px;
+}
+
+.quote-title {
+  font-family: harmoniaSansProCyrBold, 'serif';
+}
+
+.quote-text {
+  font-family: clearFont, 'serif';
+  font-size: 35px;
+  line-height: 45px;
+}

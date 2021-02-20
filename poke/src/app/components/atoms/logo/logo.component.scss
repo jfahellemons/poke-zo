@@ -1,0 +1,13 @@
+@import "../../../../variables";
+
+
+.logo-container {
+  width: 100px;
+  flex: 1;
+  margin-right: 100px;
+}
+
+.dark-backGround {
+  background-color: $poke-dark;
+  padding: 40px 10px 15px;
+}

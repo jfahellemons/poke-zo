@@ -1,0 +1,57 @@
+@import "../../../../variables";
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.icon-container, .mobile-items-container {
+  display: none;
+}
+
+.menu-items-container {
+  flex: 3;
+}
+
+@media (max-width: $tablet-width) {
+  .header {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 50px;
+    display: block;
+    background-color: $poke-white;
+
+    &.full-height {
+      bottom: 0;
+      padding: 10px 20px;
+      align-items: flex-start;
+      height: 100%;
+    }
+  }
+
+  .mobile-items-container {
+    margin-top: 20px;
+    display: block;
+  }
+
+  .logo-header, .menu-items-container {
+    display: none;
+  }
+
+  .toggle-icon {
+    margin-top: 10px;
+    width: 30px;
+  }
+
+  .icon-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+}
