@@ -16,6 +16,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { QuoteComponent } from './components/organisms/quote/quote.component';
 import { MenuComponent as MenuPage} from './pages/menu/menu.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { ContactComponent } from './pages/contact/contact.component';
+import { GoogleMapsModule } from '@angular/google-maps'
 
 @NgModule({
   declarations: [
@@ -34,10 +36,12 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     HomeComponent,
     QuoteComponent,
     MenuPage,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
-    PdfViewerModule
+    PdfViewerModule,
+    GoogleMapsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

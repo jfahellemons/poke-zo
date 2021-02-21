@@ -1,0 +1,15 @@
+@import "../../../variables";
+
+.contact-container {
+  margin-left: -100px;
+  margin-right: -100px;
+}
+
+.contact-first-row, .contact-second-row {
+  display: flex;
+}
+
+.saus-img, .bowl-img {
+  flex: 1;
+  max-width: 50%;
+}
