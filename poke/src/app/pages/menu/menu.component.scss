@@ -1,0 +1,36 @@
+@import "../../../variables";
+
+.menu-page-container {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.menu-text-col, .menu-pdf-col {
+  flex: 1;
+}
+
+.menu-text-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-title {
+  font-family: harmoniaSansProCyrBold, 'serif';
+  font-size: 110px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-bottom: -10px;
+}
+
+.menu-zoom-text {
+  font-family: harmoniaSansProCyrBold, 'serif';
+  letter-spacing: 2px;
+  text-align: center;
+}

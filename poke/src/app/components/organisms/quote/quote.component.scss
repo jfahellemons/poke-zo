@@ -12,12 +12,14 @@
 .quote-title {
   font-family: harmoniaSansProCyrRegular, 'serif';
   text-transform: uppercase;
+  margin-bottom: 50px;
 }
 
 .quote-text {
   font-family: clearFont, 'serif';
   font-size: 50px;
   line-height: 70px;
+  letter-spacing: 5px;
 }
 
 @media (max-width: $mobile-width) {

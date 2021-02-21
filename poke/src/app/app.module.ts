@@ -14,6 +14,7 @@ import { MapsComponent } from './components/molecules/maps/maps.component';
 import { HeaderComponent } from './components/organisms/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { QuoteComponent } from './components/organisms/quote/quote.component';
+import { MenuComponent as MenuPage} from './pages/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { QuoteComponent } from './components/organisms/quote/quote.component';
     HeaderComponent,
     HomeComponent,
     QuoteComponent,
+    MenuPage,
   ],
   imports: [
     BrowserModule
