@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { MenuItemComponent } from './components/atoms/menu-item/menu-item.component';
 import { LogoComponent } from './components/atoms/logo/logo.component';
@@ -18,7 +19,8 @@ import { MenuComponent as MenuPage} from './pages/menu/menu.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { ContactComponent } from './pages/contact/contact.component';
 import { GoogleMapsModule } from '@angular/google-maps';
-import { ContactInfoComponent } from './components/molecules/contact-info/contact-info.component'
+import { ContactInfoComponent } from './components/molecules/contact-info/contact-info.component';
+import { VacanciesComponent } from './pages/vacancies/vacancies.component'
 
 @NgModule({
   declarations: [
@@ -39,11 +41,12 @@ import { ContactInfoComponent } from './components/molecules/contact-info/contac
     MenuPage,
     ContactComponent,
     ContactInfoComponent,
+    VacanciesComponent,
   ],
   imports: [
     BrowserModule,
     PdfViewerModule,
-    GoogleMapsModule
+    GoogleMapsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

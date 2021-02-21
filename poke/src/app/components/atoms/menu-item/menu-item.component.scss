@@ -3,6 +3,7 @@
 .menu-item {
   list-style-type: none;
   a {
+    cursor: pointer;
     font-family: harmoniaSansProCyrBold, serif;
     color: $poke-dark;
     font-size: 14px;

@@ -1,8 +1,25 @@
 @import "../../../../variables";
 
-.header {
+#header {
+  background-color: $poke-white;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   display: flex;
   align-items: center;
+  padding-right: 100px;
+  padding-left: 100px;
+
+  transition: font-size 0.5s, height 0.5s;
+  -webkit-transition: font-size 0.5s, height 0.5s;
+  -moz-transition: font-size 0.5s, height 0.5s;
+}
+
+#header.small {
+  font-size: 12px;
+  height: 30px;
 }
 
 .icon-container, .mobile-items-container {
@@ -15,11 +32,6 @@
 
 @media (max-width: $tablet-width) {
   .header {
-    z-index: 100;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
     height: 50px;
     display: block;
     background-color: $poke-white;
