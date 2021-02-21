@@ -1,3 +1,8 @@
-<p>
-  pdf-menu works!
-</p>
+<div class="pdf-menu-container">
+  <pdf-viewer [src]="pdfSrc"
+              [render-text]="true"
+              [zoom]="zoom"
+              [original-size]="false"
+              style="display: block;"
+  ></pdf-viewer>
+</div>

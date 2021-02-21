@@ -1,11 +1,11 @@
 <div class="menu-page-container">
-  <div class="menu-text-col">
+  <div class="menu-text-col" *ngIf="!pdfZoomedIn">
     <div class="menu-text">
       <span class="menu-title">menu</span>
       <span class="menu-zoom-text">klik en zoom in</span>
     </div>
   </div>
-  <div class="menu-pdf-col">
-    <app-pdf-menu></app-pdf-menu>
+  <div class="menu-pdf-col" (click)="togglePdfMenu()">
+    <app-pdf-menu [isActive]="pdfZoomedIn"></app-pdf-menu>
   </div>
 </div>

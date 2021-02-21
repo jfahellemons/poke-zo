@@ -15,6 +15,7 @@ import { HeaderComponent } from './components/organisms/header/header.component'
 import { HomeComponent } from './pages/home/home.component';
 import { QuoteComponent } from './components/organisms/quote/quote.component';
 import { MenuComponent as MenuPage} from './pages/menu/menu.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { MenuComponent as MenuPage} from './pages/menu/menu.component';
     MenuPage,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
