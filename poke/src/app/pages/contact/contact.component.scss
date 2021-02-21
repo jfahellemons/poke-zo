@@ -13,6 +13,29 @@
   max-width: 50%;
 }
 
-.contact-second-row > *, .contact-first-row > * {
+.contact-first-row > * {
   flex: 1;
+}
+
+.contact-second-row {
+  .col1 {
+    flex: 1.2;
+  }
+  .col2 {
+    flex: 1;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .contact-container {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .contact-first-row, .contact-second-row {
+    flex-direction: column;
+  }
+
+  .saus-img, .bowl-img {
+    max-width: 100%;
+  }
 }
