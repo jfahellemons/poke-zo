@@ -10,6 +10,9 @@
 }
 
 .saus-img, .bowl-img {
-  flex: 1;
   max-width: 50%;
+}
+
+.contact-second-row > *, .contact-first-row > * {
+  flex: 1;
 }

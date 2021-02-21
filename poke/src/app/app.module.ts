@@ -17,7 +17,8 @@ import { QuoteComponent } from './components/organisms/quote/quote.component';
 import { MenuComponent as MenuPage} from './pages/menu/menu.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { ContactComponent } from './pages/contact/contact.component';
-import { GoogleMapsModule } from '@angular/google-maps'
+import { GoogleMapsModule } from '@angular/google-maps';
+import { ContactInfoComponent } from './components/molecules/contact-info/contact-info.component'
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { GoogleMapsModule } from '@angular/google-maps'
     QuoteComponent,
     MenuPage,
     ContactComponent,
+    ContactInfoComponent,
   ],
   imports: [
     BrowserModule,
