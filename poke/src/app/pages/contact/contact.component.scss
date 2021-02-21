@@ -26,6 +26,21 @@
   }
 }
 
+.contact-photo-container {
+  position: relative;
+}
+
+.order-button-contact {
+  margin: auto;
+  position: absolute;
+  bottom: 150px;
+  right: 100px;
+}
+
+.contact-photo {
+  max-width: 100%;
+}
+
 @media (max-width: $mobile-width) {
   .contact-container {
     margin-left: -20px;
@@ -37,5 +52,10 @@
 
   .saus-img, .bowl-img {
     max-width: 100%;
+  }
+
+  .order-button-contact {
+    bottom: 50px;
+    right: 50px;
   }
 }
