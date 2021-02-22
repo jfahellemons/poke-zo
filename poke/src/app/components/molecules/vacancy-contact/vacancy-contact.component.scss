@@ -1,0 +1,52 @@
+@import "../../../../variables";
+
+.vacancy-contact {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  z-index: 1;
+}
+
+.vacancy-title {
+  width: 500px;
+  margin-left: 150px;
+  h1 {
+    font-family: harmoniaSansProCyrBold, 'serif';
+    color: $poke-green;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 45px;
+  }
+}
+
+.vacancy-content {
+  display: flex;
+  position: relative;
+}
+
+.vacancy-description {
+  flex: 1;
+}
+
+.vacancy-description-text {
+  color: $poke-green;
+  font-family: harmoniaSansProCyrBold, 'serif';
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.vacancy-button {
+  margin-top: 35px;
+}
+
+.vacancy-img-container {
+  flex: 3;
+  z-index: -1;
+}
+
+.vacancy-img {
+  max-width: 100%;
+  margin-left: -5%;
+  margin-top: -40px;
+}

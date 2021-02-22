@@ -20,7 +20,9 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { ContactComponent } from './pages/contact/contact.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { ContactInfoComponent } from './components/molecules/contact-info/contact-info.component';
-import { VacanciesComponent } from './pages/vacancies/vacancies.component'
+import { VacanciesComponent } from './pages/vacancies/vacancies.component';
+import { ButtonComponent } from './components/atoms/button/button.component'
+import {VacancyContactComponent} from "./components/molecules/vacancy-contact/vacancy-contact.component";
 
 @NgModule({
   declarations: [
@@ -42,6 +44,9 @@ import { VacanciesComponent } from './pages/vacancies/vacancies.component'
     ContactComponent,
     ContactInfoComponent,
     VacanciesComponent,
+    VacancyContactComponent,
+    ButtonComponent,
+    VacancyContactComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,31 @@
+@import "../../../../variables";
+
+.button {
+  border: none;
+  padding: 15px 20px;
+  font-family: harmoniaSansProCyrBold, 'serif';
+  font-size: 25px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.green {
+  background-color: $poke-green;
+  color: $poke-white;
+}
+
+.dark {
+  background-color: $poke-dark;
+  color: $poke-white;
+}
+
+.white-dark {
+  background-color: $poke-white;
+  color: $poke-dark;
+}
+
+.white-green {
+  background-color: $poke-white;
+  color: $poke-green;
+}
