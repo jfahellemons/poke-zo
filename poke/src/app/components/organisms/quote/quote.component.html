@@ -1,5 +1,5 @@
 <div class="quote-container">
-  <h3 class="quote-title">Het team</h3>
-  <span class="quote-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</span>
+  <h3 class="quote-title" [ngClass]="{'small' : variant === 'small', 'large' : variant === 'large'}">{{title}}</h3>
+  <span class="quote-text" [ngClass]="{'small' : variant === 'small', 'large' : variant === 'large'}">{{description}}</span>
+  <span *ngIf="author" class="quote-author">{{author}}</span>
 </div>

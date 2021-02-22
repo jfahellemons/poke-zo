@@ -7,12 +7,18 @@
   padding: 100px 300px;
   margin-left: -100px;
   margin-right: -100px;
+  display: flex;
+  flex-direction: column;
 }
 
 .quote-title {
   font-family: harmoniaSansProCyrRegular, 'serif';
   text-transform: uppercase;
   margin-bottom: 50px;
+
+  &.large {
+    margin-bottom: 25px;
+  }
 }
 
 .quote-text {
@@ -20,6 +26,19 @@
   font-size: 50px;
   line-height: 70px;
   letter-spacing: 5px;
+
+  &.large {
+    font-size: 90px;
+    line-height: 100px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.quote-author {
+  font-family: harmoniaSansProCyrRegularGdi, 'serif';
+  letter-spacing: 2px;
 }
 
 @media (max-width: $mobile-width) {
@@ -30,16 +49,27 @@
     margin-right: -20px;
   }
 
+  .quote-title {
+    &.large {
+      font-size: 14px;
+    }
+  }
+
   .quote-text {
     font-size: 20px;
     line-height: 35px;
+
+    &.large {
+      font-size: 50px;
+      line-height: 60px;
+    }
   }
 }
 
 @media (min-width: $mobile-width) and (max-width: $tablet-width) {
   .quote-container {
     margin-top: 25px;
-    padding: 20px 60px 20px;
+    padding: 20px 60px 40px;
     margin-left: -20px;
     margin-right: -20px;
   }
