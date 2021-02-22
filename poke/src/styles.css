@@ -21,7 +21,7 @@ p, a, h2, h3, h4 {
     padding-right: 20px;
   }
 
-  p {
+  p, a {
     font-size: 14px;
   }
 }

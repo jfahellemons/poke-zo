@@ -11,3 +11,10 @@
   background-color: $poke-dark;
   padding: 40px 10px 15px;
 }
+
+@media (max-width: $mobile-width) {
+  .logo-container {
+    max-width: 80px;
+    margin: 0;
+  }
+}
