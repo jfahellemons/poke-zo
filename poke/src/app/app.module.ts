@@ -23,6 +23,7 @@ import { ContactInfoComponent } from './components/molecules/contact-info/contac
 import { VacanciesComponent } from './pages/vacancies/vacancies.component';
 import { ButtonComponent } from './components/atoms/button/button.component'
 import {VacancyContactComponent} from "./components/molecules/vacancy-contact/vacancy-contact.component";
+import { FooterComponent } from './components/organism/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import {VacancyContactComponent} from "./components/molecules/vacancy-contact/va
     VacancyContactComponent,
     ButtonComponent,
     VacancyContactComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

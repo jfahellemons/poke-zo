@@ -1,1 +1,13 @@
 @import "../../../../variables";
+
+.footer-item {
+  list-style-type: none;
+  margin-bottom: 5px;
+  a {
+    text-transform: uppercase;
+    color: $poke-green;
+    font-family: harmoniaSansProCyrBold, 'serif';
+    line-height: 20px;
+    cursor: pointer;
+  }
+}

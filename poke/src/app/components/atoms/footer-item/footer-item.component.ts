@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {navigateTo} from "../../../utils/navigationUtils";
 
 @Component({
   selector: 'app-footer-item',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer-item.component.scss']
 })
 export class FooterItemComponent implements OnInit {
+  @Input() title: string;
+  @Input() href: string;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  navigate() {
+    navigateTo(this.href);
+  }
 }

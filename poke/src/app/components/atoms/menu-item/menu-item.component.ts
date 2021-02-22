@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {navigateTo} from "../../../utils/navigationUtils";
 
 @Component({
   selector: 'app-menu-item',
@@ -9,33 +10,16 @@ export class MenuItemComponent implements OnInit {
   elementId: string;
   link: string;
   @Input() title: string;
-  @Input() set href(path: string) {
-    switch (path) {
-      case 'contact':
-        this.elementId = 'contact';
-      break;
-      case 'order':
-        this.link = '/order';
-      break;
-      case 'about':
-        this.elementId = 'about';
-      break;
-      case 'menu':
-        this.elementId = 'menu';
-      break;
-      case 'vacancies':
-        this.elementId = 'vacancies';
-      break;
-    }
-  }
+  @Input() href: string;
 
   constructor() { }
 
   navigate() {
-    if (this.elementId) {
-      const element = document.getElementById(this.elementId);
-      element.scrollIntoView({behavior:"smooth"});
-    }
+    navigateTo(this.href);
+    // if (this.elementId) {
+    //   const element = document.getElementById(this.elementId);
+    //   element.scrollIntoView({behavior:"smooth"});
+    // }
   }
 
   ngOnInit() {
