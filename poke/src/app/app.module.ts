@@ -24,6 +24,7 @@ import { VacanciesComponent } from './pages/vacancies/vacancies.component';
 import { ButtonComponent } from './components/atoms/button/button.component'
 import {VacancyContactComponent} from "./components/molecules/vacancy-contact/vacancy-contact.component";
 import { FooterComponent } from './components/organism/footer/footer.component';
+import { OrderComponent } from './pages/order/order.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { FooterComponent } from './components/organism/footer/footer.component';
     ButtonComponent,
     VacancyContactComponent,
     FooterComponent,
+    OrderComponent,
   ],
   imports: [
     BrowserModule,
