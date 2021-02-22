@@ -32,6 +32,13 @@
 
 @media (max-width: $tablet-width) {
   .header {
+    padding: 0 !important;
+    justify-content: flex-end;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     height: 50px;
     display: block;
     background-color: $poke-white;
