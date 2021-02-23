@@ -26,7 +26,7 @@ export class OrderComponent implements OnInit {
   }
 
   setPickup() {
-    this.confirmationText = "Ophalen";
+    this.confirmationText = "Afhalen";
     this.urlHellevoetsSluis = "https://pokeenzoafhaal.sitedish.shop/";
     this.urlBeijerLand = "https://pokeenzoafhaal.sitedish.shop/";
   }

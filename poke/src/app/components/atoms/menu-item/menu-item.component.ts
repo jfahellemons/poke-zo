@@ -7,7 +7,6 @@ import {navigateTo} from "../../../utils/navigationUtils";
   styleUrls: ['./menu-item.component.scss']
 })
 export class MenuItemComponent implements OnInit {
-  elementId: string;
   link: string;
   @Input() title: string;
   @Input() href: string;
@@ -16,13 +15,13 @@ export class MenuItemComponent implements OnInit {
 
   navigate() {
     navigateTo(this.href);
-    // if (this.elementId) {
-    //   const element = document.getElementById(this.elementId);
-    //   element.scrollIntoView({behavior:"smooth"});
-    // }
   }
 
   ngOnInit() {
 
+  }
+
+  isLink(): boolean {
+    return this.href.indexOf("/") !== -1
   }
 }
