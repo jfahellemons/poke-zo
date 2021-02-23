@@ -18,7 +18,7 @@ export class MapsComponent implements OnInit {
     center: new google.maps.LatLng(51.827134965227074, 4.4139451133450605),
     maxZoom: 16,
     minZoom: 8,
-    styles: this.getStyle(),
+    // styles: this.getStyle(),
   };
 
   markerOptions: google.maps.MarkerOptions = {

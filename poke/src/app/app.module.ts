@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import {RouterModule, Routes} from '@angular/router';
 import { AppComponent } from './app.component';
 import { MenuItemComponent } from './components/atoms/menu-item/menu-item.component';
 import { LogoComponent } from './components/atoms/logo/logo.component';
@@ -25,6 +25,13 @@ import { ButtonComponent } from './components/atoms/button/button.component'
 import {VacancyContactComponent} from "./components/molecules/vacancy-contact/vacancy-contact.component";
 import { FooterComponent } from './components/organism/footer/footer.component';
 import { OrderComponent } from './pages/order/order.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { MainComponent } from './pages/main/main.component';
+
+const routes: Routes = [
+  { path: '', component: MainComponent },
+  { path: 'order', component: OrderComponent },
+];
 
 @NgModule({
   declarations: [
@@ -51,11 +58,17 @@ import { OrderComponent } from './pages/order/order.component';
     VacancyContactComponent,
     FooterComponent,
     OrderComponent,
+    MainComponent,
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     PdfViewerModule,
     GoogleMapsModule,
+    RouterModule.forRoot(routes),
+  ],
+  exports: [
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
