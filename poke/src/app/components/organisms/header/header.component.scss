@@ -43,6 +43,11 @@
     display: block;
     background-color: $poke-white;
 
+    #header.small {
+      font-size: 12px;
+      height: 100%;
+    }
+
     &.full-height {
       bottom: 0;
       padding: 10px 20px;
@@ -62,15 +67,12 @@
 
   .toggle-icon {
     margin-top: 10px;
-    width: 30px;
+    max-width: 30px;
+    max-height: 30px;
   }
 
   .icon-container {
     display: flex;
     justify-content: flex-end;
-  }
-
-  .hamburger-icon {
-    display: block;
   }
 }
