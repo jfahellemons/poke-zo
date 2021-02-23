@@ -31,7 +31,7 @@
 }
 
 @media (max-width: $tablet-width) {
-  .header {
+  #header {
     padding: 0 !important;
     justify-content: flex-end;
     z-index: 100;
@@ -42,16 +42,19 @@
     height: 50px;
     display: block;
     background-color: $poke-white;
-
-    #header.small {
-      font-size: 12px;
-      height: 100%;
-    }
-
     &.full-height {
       bottom: 0;
       padding: 10px 20px;
       align-items: flex-start;
+      height: 100%;
+    }
+  }
+
+  #header.small {
+    height: 50px;
+    &.full-height {
+      bottom: 0;
+      padding: 10px 20px;
       height: 100%;
     }
   }
