@@ -7,12 +7,15 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class PdfMenuComponent implements OnInit {
   zoom = 0.7;
+
   @Input() set isActive(active: boolean) {
     this.zoom = active ? 1 : 0.5;
   }
+
   pdfSrc = '../../../../assets/pdf/menu.pdf';
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

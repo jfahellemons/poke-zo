@@ -3,7 +3,9 @@
 .footer-item {
   list-style-type: none;
   margin-bottom: 5px;
+
   a {
+    text-decoration: none;
     text-transform: uppercase;
     color: $poke-green;
     font-family: harmoniaSansProCyrBold, 'serif';

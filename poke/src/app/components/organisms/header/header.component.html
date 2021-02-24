@@ -9,6 +9,6 @@
     <app-menu [menuItems]="menuItems"></app-menu>
   </div>
   <div class="mobile-items-container" *ngIf="isToggled">
-    <app-mobile-menu [menuItems]="menuItems"></app-mobile-menu>
+    <app-mobile-menu (onClickMenuItem)="toggleIcon()" [menuItems]="menuItems"></app-mobile-menu>
   </div>
 </div>

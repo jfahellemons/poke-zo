@@ -21,6 +21,7 @@
   top: 0;
   left: 100px;
 }
+
 .order-buttons {
   display: flex;
   align-items: center;
@@ -39,6 +40,7 @@
 .confirmation-header {
   display: flex;
   justify-content: center;
+
   h3 {
     font-family: harmoniaSansProCyrBold;
     color: $poke-dark;

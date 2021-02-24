@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Menu} from "../../../types/Menu";
 
 @Component({
@@ -7,11 +7,17 @@ import {Menu} from "../../../types/Menu";
   styleUrls: ['./mobile-menu.component.scss']
 })
 export class MobileMenuComponent implements OnInit {
+  @Output() onClickMenuItem = new EventEmitter<void>();
   @Input() menuItems: Menu[];
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
+  }
+
+  menuItemClicked() {
+    this.onClickMenuItem.emit();
   }
 
 }

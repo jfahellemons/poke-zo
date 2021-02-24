@@ -10,7 +10,8 @@ export class LogoComponent implements OnInit {
   imgSrc: string;
   isDarkLogo: boolean;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
     this.imgSrc = this.getImgSrc();

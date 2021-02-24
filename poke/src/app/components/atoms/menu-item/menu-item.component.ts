@@ -1,5 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {navigateTo} from "../../../utils/navigationUtils";
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {isHref, navigateTo} from "../../../utils/navigationUtils";
 
 @Component({
   selector: 'app-menu-item',
@@ -10,10 +10,13 @@ export class MenuItemComponent implements OnInit {
   link: string;
   @Input() title: string;
   @Input() href: string;
+  @Output() clickEvent = new EventEmitter<void>();
 
-  constructor() { }
+  constructor() {
+  }
 
   navigate() {
+    this.onClick();
     navigateTo(this.href);
   }
 
@@ -21,7 +24,11 @@ export class MenuItemComponent implements OnInit {
 
   }
 
+  onClick() {
+    this.clickEvent.emit();
+  }
+
   isLink(): boolean {
-    return this.href.indexOf("/") !== -1
+    return isHref(this.href);
   }
 }

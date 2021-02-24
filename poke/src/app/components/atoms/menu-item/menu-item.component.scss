@@ -2,6 +2,7 @@
 
 .menu-item {
   list-style-type: none;
+
   a {
     cursor: pointer;
     font-family: harmoniaSansProCyrBold, serif;
@@ -13,9 +14,10 @@
     text-transform: uppercase;
     font-weight: 600;
     transition: 0.3s;
-      &:hover {
-        border: 1px solid $poke-dark;
-      }
+
+    &:hover {
+      border: 1px solid $poke-dark;
+    }
   }
 }
 

@@ -9,7 +9,8 @@ import {Menu} from "../../../types/Menu";
 export class MenuComponent implements OnInit {
   @Input() menuItems: Menu[];
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

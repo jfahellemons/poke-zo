@@ -1,3 +1,7 @@
-<li *ngIf="!isLink()" class="menu-item"><a (click)="navigate()">{{title}}</a></li>
-<li *ngIf="isLink()" class="menu-item"><a routerLink="{{href}}">{{title}}</a></li>
+<li *ngIf="!isLink()" class="menu-item">
+  <a (click)="navigate()">{{title}}</a>
+</li>
+<li *ngIf="isLink()" class="menu-item">
+  <a routerLink="{{href}}">{{title}}</a>
+</li>
 

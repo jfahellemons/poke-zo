@@ -11,7 +11,8 @@ export class QuoteComponent implements OnInit {
   @Input() description: string;
   @Input() author: string;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

@@ -22,6 +22,14 @@ export function navigateTo(path: string) {
 
   if (elementId) {
     const element = document.getElementById(elementId);
-    element.scrollIntoView({behavior:"smooth"});
+    element.scrollIntoView({behavior: "smooth"});
+  }
+}
+
+export function isHref(href: string): boolean {
+  if (href) {
+    return href.indexOf("/") !== -1;
+  } else {
+    return false;
   }
 }

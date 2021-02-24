@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { SocialMediaIconComponent } from './social-media-icon.component';
+import {SocialMediaIconComponent} from './social-media-icon.component';
 
 describe('SocialMediaIconComponent', () => {
   let component: SocialMediaIconComponent;
@@ -8,9 +8,9 @@ describe('SocialMediaIconComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SocialMediaIconComponent ]
+      declarations: [SocialMediaIconComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

@@ -8,11 +8,11 @@ import {animate, style, transition, trigger} from "@angular/animations";
   animations: [
     trigger('fadeInOut', [
       transition(':enter', [   // :enter is alias to 'void => *'
-        style({opacity:0}),
-        animate(500, style({opacity:1}))
+        style({opacity: 0}),
+        animate(500, style({opacity: 1}))
       ]),
       transition(':leave', [   // :leave is alias to '* => void'
-        animate(500, style({opacity:0}))
+        animate(500, style({opacity: 0}))
       ])
     ])
   ]
@@ -22,6 +22,7 @@ export class ButtonComponent implements OnInit {
   @Input() href: string;
   @Input() target: string;
   @Input() name: string;
+
   @Input() set variant(variant: 'green' | 'black' | 'whiteDark' | 'whiteGreen') {
     switch (variant) {
       case 'black':
@@ -38,7 +39,8 @@ export class ButtonComponent implements OnInit {
     }
   }
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

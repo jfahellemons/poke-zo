@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {navigateTo} from "../../../utils/navigationUtils";
+import {isHref, navigateTo} from "../../../utils/navigationUtils";
 
 @Component({
   selector: 'app-footer-item',
@@ -10,9 +10,14 @@ export class FooterItemComponent implements OnInit {
   @Input() title: string;
   @Input() href: string;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
+  }
+
+  isLink(): boolean {
+    return isHref(this.href);
   }
 
   navigate() {

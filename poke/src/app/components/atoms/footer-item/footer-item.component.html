@@ -1,1 +1,2 @@
-<li class="footer-item"><a (click)="navigate()">{{title}}</a></li>
+<li *ngIf="!isLink()" class="footer-item"><a (click)="navigate()">{{title}}</a></li>
+<li *ngIf="isLink()" class="footer-item"><a href="{{href}}">{{title}}</a></li>

@@ -16,16 +16,17 @@ export class SocialMediaIconComponent implements OnInit {
         this.href = 'https://www.facebook.com/pages/category/Restaurant/Pok%C3%A9Zo-112185297196453/';
         this.iconSrc = '../../../assets/icons/icon_facebook.svg';
         this.alt = 'facebook';
-      break;
+        break;
       case 'instagram' :
         this.href = 'https://www.instagram.com/tokonoetiebrielle/';
         this.iconSrc = '../../../assets/icons/icon_instagram.svg';
         this.alt = 'instagram';
-       break;
+        break;
     }
   }
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
