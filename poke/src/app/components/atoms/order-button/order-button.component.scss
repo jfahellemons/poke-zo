@@ -1,5 +1,12 @@
 @import "../../../../variables";
 
+.main-order-button {
+  position: fixed;
+  z-index: 100;
+  right: 90px;
+  top: 250px;
+}
+
 .order-button-container {
   display: flex;
   justify-content: center;
@@ -45,5 +52,10 @@
 
   .order-text {
     font-size: 12px;
+  }
+
+  .main-order-button {
+    right: 60px;
+    top: 100px;
   }
 }

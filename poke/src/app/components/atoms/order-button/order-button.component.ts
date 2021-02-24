@@ -1,6 +1,5 @@
 import {AfterViewInit, Component, Input, OnInit} from '@angular/core';
 import CircleType from 'circletype';
-import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-order-button',

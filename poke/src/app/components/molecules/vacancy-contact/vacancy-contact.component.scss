@@ -9,7 +9,7 @@
 }
 
 .vacancy-title {
-  width: 500px;
+  //width: 500px;
   margin-left: 150px;
   h1 {
     font-family: harmoniaSansProCyrBold, 'serif';
@@ -51,7 +51,7 @@
   margin-top: -40px;
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: $tablet-width) {
   .vacancy-contact {
     padding-right: 0;
     padding-left: 0;
