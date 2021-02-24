@@ -75,3 +75,10 @@
     flex-direction: column;
   }
 }
+
+@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  .vacancy-button {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}

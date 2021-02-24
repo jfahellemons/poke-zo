@@ -22,7 +22,11 @@ p, a, h2, h3, h4 {
   }
 
   p, a {
-    font-size: 14px;
+    font-size: 12px;
+  }
+
+  p, a, h2, h3, h4 {
+    letter-spacing: 1px;
   }
 }
 
@@ -30,5 +34,9 @@ p, a, h2, h3, h4 {
   body {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  p, a {
+    font-size: 14px;
   }
 }
