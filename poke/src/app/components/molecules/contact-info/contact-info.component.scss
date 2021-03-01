@@ -40,6 +40,13 @@
   text-decoration: underline;
 }
 
+.department-phone {
+  text-decoration: none;
+  color: $poke-white;
+  letter-spacing: 2px;
+  margin-top: 8px;
+}
+
 .social-media-icons-contact {
   margin-top: 10px;
 }
@@ -102,6 +109,10 @@
     flex-direction: column;
     margin-top: 25px;
     position: relative;
+  }
+
+  .department-phone {
+    font-size: 16px;
   }
 }
 

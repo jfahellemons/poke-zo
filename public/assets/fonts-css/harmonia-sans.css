@@ -1,0 +1,24 @@
+@font-face {
+  font-family: harmoniaSans;
+  src: url("../fonts/harmoniaSans.otf") format("opentype");
+}
+
+@font-face {
+  font-family: harmoniaSansProCyrBold;
+  src: url("../fonts/harmoniaSansProCyr-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: harmoniaSansProCyrRegular;
+  src: url("../fonts/harmoniaSansProCyr-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: harmoniaSansProCyrRegularGdi;
+  src: url("../fonts/harmoniaSansProCyr-Regular_gdi.otf") format("opentype");
+}
+
+@font-face {
+  font-family: clearFont;
+  src: url("../fonts/ClearFace-Heavy.woff") format("woff");
+}

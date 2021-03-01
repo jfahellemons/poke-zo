@@ -23,12 +23,12 @@ export class OrderComponent implements OnInit {
   setDeliver() {
     this.confirmationText = "Bezorgen";
     this.urlBeijerLand = "https://pokenzobezorg.sitedish.shop/";
-    this.urlHellevoetsSluis = "https://pokenzobezorg.sitedish.shop/";
+    this.urlHellevoetsSluis = "https://pokeenzohellevoetsluis.sitedish.shop/";
   }
 
   setPickup() {
     this.confirmationText = "Afhalen";
-    this.urlHellevoetsSluis = "https://pokeenzoafhaal.sitedish.shop/";
+    this.urlHellevoetsSluis = "https://pokeenzohellevoetsluis.sitedish.shop/";
     this.urlBeijerLand = "https://pokeenzoafhaal.sitedish.shop/";
   }
 }

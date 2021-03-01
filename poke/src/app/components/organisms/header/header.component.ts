@@ -8,8 +8,8 @@ import {Menu} from "../../../types/Menu";
 })
 export class HeaderComponent implements OnInit {
   menuItems: Menu[];
-  private isToggled: boolean;
-  private iconSrc = '../../../../assets/icons/hamburger.png';
+  isToggled: boolean;
+  iconSrc = '../../../../assets/icons/hamburger.png';
 
   constructor() {
   }
@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
     this.menuItems = this.getMenuItems();
   }
 
-  private toggleIcon() {
+  toggleIcon() {
     this.isToggled = !this.isToggled;
     if (this.isToggled) {
       this.iconSrc = '../../../../assets/icons/close.png'

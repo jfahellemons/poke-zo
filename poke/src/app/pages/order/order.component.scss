@@ -13,7 +13,7 @@
   margin: 0 auto;
   background-size: cover;
   background-position: center center;
-  background-image: url('./../../../assets/images/levi-order.jpg');
+  background-image: linear-gradient(rgba(109,109,109,.75), rgba(0,0,0,.85)), url('./../../../assets/images/levi-order.jpg');
 }
 
 .order-logo {
@@ -43,7 +43,7 @@
 
   h3 {
     font-family: harmoniaSansProCyrBold;
-    color: $poke-dark;
+    color: $poke-green;
     font-size: 40px;
   }
 }
