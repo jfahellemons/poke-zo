@@ -23,7 +23,7 @@
     "@angular/router": "^7.2.16",
     "circletype": "^2.3.0",
     "core-js": "^2.5.4",
-    "ng2-pdf-viewer": "6.3.2",
+    "ng2-pdf-viewer": "6.0.0",
     "rxjs": "~6.2.0",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
@@ -31,7 +31,7 @@
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.13.0",
     "@angular/cli": "~7.3.10",
-    "@angular/compiler-cli": "~8.2.2",
+    "@angular/compiler-cli": "^7.2.16",
     "@angular/language-service": "^7.2.16",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
