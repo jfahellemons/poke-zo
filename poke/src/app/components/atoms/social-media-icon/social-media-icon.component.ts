@@ -18,7 +18,7 @@ export class SocialMediaIconComponent implements OnInit {
         this.alt = 'facebook';
         break;
       case 'instagram' :
-        this.href = 'https://www.instagram.com/tokonoetiebrielle/';
+        this.href = 'https://www.instagram.com/pokenzoo/';
         this.iconSrc = '../../../assets/icons/icon_instagram.svg';
         this.alt = 'instagram';
         break;

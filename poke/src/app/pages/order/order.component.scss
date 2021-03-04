@@ -60,6 +60,20 @@
   }
 
   .order-logo {
-    left: unset;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 0;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  .order-logo {
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 0;
   }
 }

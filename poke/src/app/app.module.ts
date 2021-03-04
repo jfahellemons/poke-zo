@@ -30,7 +30,7 @@ import {MainComponent} from './pages/main/main.component';
 
 const routes: Routes = [
   {path: '', component: MainComponent},
-  {path: 'order', component: OrderComponent},
+  {path: 'bestellen', component: OrderComponent},
 ];
 
 @NgModule({

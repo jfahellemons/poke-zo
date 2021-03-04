@@ -29,7 +29,7 @@ export class HeaderComponent implements OnInit {
 
   private getMenuItems() {
     const menuItems: Array<Menu> = [
-      {title: "online bestellen", href: "/order"},
+      {title: "online bestellen", href: "/bestellen"},
       {title: "ons verhaal", href: "about"},
       {title: "menu", href: "menu"},
       {title: "contact", href: "contact"},
